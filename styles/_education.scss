@@ -1,0 +1,88 @@
+@import "./variables";
+
+#education{
+    background: url("../images/aurora.jpg");
+    background-size: cover;
+    background-position: center;
+    .schools{
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+
+        .card{
+            background: rgba(36, 35, 35, 0.856);
+            border: 1px solid white;
+            width: 30vw;
+            height: 30vw;
+            padding: 1rem;
+            margin: 1.3rem;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+
+            .card-img{
+                width: 30%;
+                height: 30%;
+                border-radius: 50%;
+            }
+            .school-name{
+                color: white;
+                padding: 0.3rem;
+                margin: 0.2rem;
+                font-size: 2rem;
+            }
+            .description{
+                color: rgb(14, 14, 14);
+                text-align: justify;
+                font-size: 1.5rem;
+                padding: 0.3rem;
+                margin: 0.2rem;
+                padding-bottom: 2rem;
+                border: 1px solid white;
+                background-color: rgba(245, 245, 245, 0.301);
+            }
+            .visit-link{
+                position: absolute;
+                text-decoration: none;
+                bottom: 1rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+                padding: 0.3rem;
+                font-size: 1.2rem;
+                border: 1px solid white;
+                color: white;
+                border-radius: 3px;
+                transition: all 1s ease;
+            }
+            .visit-link:hover{
+                color: rgb(36, 229, 255);
+                background-color: black;
+            }
+        }
+        .middle-school{
+            transition: all 1s ease 0.2s;
+            filter: brightness(70%) blur(2px);
+        }
+        .middle-school:hover{
+            filter: brightness(100%) blur(0px);
+            transform: translate(0,-10px);
+        }
+        
+        .high-school{
+            transition: all 1s ease 0.2s;
+            filter: brightness(70%) blur(2px);
+        }
+        .high-school:hover{
+            filter: brightness(100%) blur(0px);
+            transform: translate(0,-10px);
+        }
+        .university{
+            transition: all 1s ease 0.2s;
+            filter: brightness(70%) blur(2px);
+        }
+        .university:hover{
+            filter: brightness(100%) blur(0px);
+            transform: translate(0,-10px);
+        }
+    }
+}

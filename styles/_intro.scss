@@ -1,0 +1,115 @@
+@import "./variables";
+
+#intro{
+
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/jungle.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+
+    .svg-container{
+        background-color: rgba($color-black, 0.81);
+        position: relative;
+        height: 40%;
+        @include centralise;
+        top: 30%;
+
+        .small-text{
+            position: absolute;
+            background-color: rgba($color-white, 0.151);
+            color: rgba(245, 226, 226, 0.884);
+            width: 0%;
+            padding: 1.5rem;
+            font-size: 0;
+            @include centralise;
+            top: 0%;
+            opacity: 0;
+            border-radius: 5px;
+            text-shadow: 0 0 5px rgb(216, 255, 42),
+                         0 0 20px rgba(255, 3, 3, 0.842),
+                         0 0 30px rgba(255, 41, 41, 0.842);
+            text-align: center;
+            animation: come 2.5s ease-in-out forwards 5s;
+        }
+
+        @keyframes come {
+            12%{
+                transform: translate(-50%, -50%) rotateX(90deg);
+            }
+            25%{
+                transform: translate(-50%, -50%) rotateX(180deg);
+                opacity: 0.1;
+            }
+            37%{
+                transform: translate(-50%, -50%) rotateX(270deg);
+            }
+            50%{
+                transform: translate(-50%, -50%) rotateX(360deg);
+                opacity: 0.25;
+            }
+            62%{
+                transform: translate(-50%, -50%) rotateX(450deg);
+            }
+            75%{
+                transform: translate(-50%, -50%) rotateX(540deg);
+            }
+            87%{
+                transform: translate(-50%, -50%) rotateX(630deg);
+            }
+            100%{
+                transform: translate(-50%, -50%) rotateX(720deg);
+                top: 80%;
+                width: 60%;
+                font-size: 2rem;
+                opacity: 1;
+            }   
+        }
+
+        #name{
+            width: 80%;
+            position: absolute;
+            @include centralise;
+            animation: fill_name 1.5s ease forwards 5s;
+        }
+        #s{   stroke-dasharray: 259.3     ;    stroke-dashoffset: 259.3   ;     animation: appear 1s ease forwards;                 }
+        #a{   stroke-dasharray: 240.7     ;    stroke-dashoffset: 240.7   ;     animation: appear 1s ease forwards 0.25s;           }
+        #h{   stroke-dasharray: 264.82    ;    stroke-dashoffset: 264.82  ;     animation: appear 1s ease forwards 0.5s;            }
+        #i{   stroke-dasharray: 112.65    ;    stroke-dashoffset: 112.65  ;     animation: appear 1s ease forwards 0.75s;           }
+        #l{   stroke-dasharray: 159.89    ;    stroke-dashoffset: 159.89  ;     animation: appear 1s ease forwards 1s;              }
+        
+        #k{   stroke-dasharray: 255.4     ;    stroke-dashoffset: 255.4   ;     animation: appear 1s ease forwards 1.25s;           }
+        #u{   stroke-dasharray: 240.25    ;    stroke-dashoffset: 240.25  ;     animation: appear 1s ease forwards 1.5s;            }
+        #m{   stroke-dasharray: 389.5     ;    stroke-dashoffset: 389.5   ;     animation: appear 1s ease forwards 1.75s;           }
+        #a2{  stroke-dasharray: 240.7     ;    stroke-dashoffset: 240.7   ;     animation: appear 1s ease forwards 2s;              }
+        #r{   stroke-dasharray: 274       ;    stroke-dashoffset: 274     ;     animation: appear 1s ease forwards 2.25s;           }
+
+        #b{   stroke-dasharray: 295.24    ;    stroke-dashoffset: 295.24  ;     animation: appear 1s ease forwards 2.5s;            }
+        #a3{  stroke-dasharray: 240.7     ;    stroke-dashoffset: 240.7   ;     animation: appear 1s ease forwards 2.75s;           }
+        #i2{  stroke-dasharray: 112.65    ;    stroke-dashoffset: 112.65  ;     animation: appear 1s ease forwards 3s;              }
+        #r2{  stroke-dasharray: 274       ;    stroke-dashoffset: 274     ;     animation: appear 1s ease forwards 3.25s;           }
+        #a4{  stroke-dasharray: 240.7     ;    stroke-dashoffset: 240.7   ;     animation: appear 1s ease forwards 3.5s;            }
+        #g{   stroke-dasharray: 276.15    ;    stroke-dashoffset: 276.15  ;     animation: appear 1s ease forwards 3.75s;           }
+        #i3{  stroke-dasharray: 112.65    ;    stroke-dashoffset: 112.65  ;     animation: appear 1s ease forwards 4s;              }
+    
+        @keyframes appear {
+            100%{
+                stroke-dashoffset: 0;
+                transform: rotateY(20deg);
+            }
+        }
+
+        @keyframes fill_name {
+            0%{
+                fill: transparent;
+            }
+            30%{
+                width: 90%;
+            }
+            100%{
+                fill: rgba($color-white, 0.856); 
+                width: 80%;
+            }          
+        }
+    }
+}

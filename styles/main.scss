@@ -1,0 +1,45 @@
+@import "./variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Alegreya;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    .to-top{
+        position: fixed;
+        z-index: 999;
+        background-color: rgba(31, 31, 31, 0.877);
+        color: $color-white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 1rem;
+        border: 2px solid $color-white;
+        border-radius: 50%;
+        bottom: 3rem;
+        right: 2rem;
+        transition: all 1s ease-in-out;
+    }
+    .to-top:hover{
+        background-color: $color-white;
+        color: $color-black;
+    }
+}
+
+@import "./mediaquery";
+@import "./navbar";
+@import "./intro";
+@import "./about";
+@import "./education";
+@import "./project";
+@import "./contact";
+@import "./footer";

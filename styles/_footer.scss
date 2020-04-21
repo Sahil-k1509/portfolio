@@ -1,0 +1,65 @@
+@import "./variables";
+
+footer{
+    padding: 2rem;
+    background-color: rgba(22, 22, 22, 0.973);
+    color: white;
+
+    .copyright{
+        font-size: 1.5rem;
+        float: right;
+    }
+}
+
+.github-link{
+    margin: 0.5rem;
+    .fa-github{
+        font-size: 2rem;
+    }
+    @include link;
+}
+
+.linkedin-link{
+    margin: 0.5rem;
+    .fa-linkedin{
+        font-size: 1.5rem;
+        background-color: rgb(46, 144, 255);
+        padding: 3px;
+        border-radius: 3px;
+    }
+    @include link;
+}
+
+.facebook-link{
+    margin: 0.5rem;
+    .fa-facebook{
+        font-size: 1.5rem;
+        padding: 4px 4px 0px 4px;
+        border-radius: 3px;
+        background-color: blue;
+    }
+    @include link;
+}
+
+.insta-link{
+    .fa-instagram{
+        font-size: 1.5rem;
+        background: linear-gradient(50deg, yellow,rgb(247, 31, 132), rgb(255, 0, 76));
+        padding: 0.25rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+    margin: 0.5rem;
+    @include link;
+}
+
+.gmail-link{
+    margin: 0.5rem;
+    .fa-envelope{
+        font-size: 1.5rem;
+        color: white;
+        padding: 0 2px 0 1px;
+        background-color: red;
+        border-radius: 3px;
+    }
+}
