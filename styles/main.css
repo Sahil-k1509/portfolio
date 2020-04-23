@@ -36,6 +36,24 @@ html {
   }
 }
 
+@media (max-width: 420px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 325px) {
+  html {
+    font-size: 35%;
+  }
+}
+
 body .to-top {
   position: fixed;
   z-index: 999;
@@ -155,6 +173,13 @@ body .to-top:hover {
   top: 30%;
 }
 
+@media (max-width: 738px) and (max-height: 420px) {
+  #intro .svg-container {
+    top: 50%;
+    height: 50%;
+  }
+}
+
 #intro .svg-container .small-text {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.151);
@@ -266,6 +291,13 @@ body .to-top:hover {
           transform: translate(-50%, -50%);
   -webkit-animation: fill_name 1.5s ease forwards 5s;
           animation: fill_name 1.5s ease forwards 5s;
+}
+
+@media (max-width: 738px) and (max-height: 420px) {
+  #intro .svg-container #name {
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
 }
 
 #intro .svg-container #s {
@@ -436,6 +468,12 @@ body .to-top:hover {
   height: 150vh;
 }
 
+@media (max-width: 738px) and (max-height: 420px) {
+  #about {
+    height: 300vh;
+  }
+}
+
 #about .photo-container-1 {
   position: absolute;
   top: 0;
@@ -516,6 +554,13 @@ body .to-top:hover {
   #about .about-text {
     top: 20%;
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #about .about-text {
+    width: 70%;
+    padding: 2rem;
   }
 }
 
@@ -739,6 +784,12 @@ body .to-top:hover {
   padding: 2rem;
 }
 
+@media (max-width: 420px) {
+  #about .post-script {
+    width: 90%;
+  }
+}
+
 #education {
   background: url("../images/aurora.jpg");
   background-size: cover;
@@ -758,6 +809,16 @@ body .to-top:hover {
 }
 
 @media (max-width: 600px) {
+  #education .schools {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 738px) and (max-height: 420px) {
   #education .schools {
     width: 90%;
     -webkit-box-orient: vertical;
@@ -793,6 +854,22 @@ body .to-top:hover {
   #education .schools .card {
     height: 40vh;
     width: 70%;
+    left: 70px;
+  }
+}
+
+@media (max-width: 420px) {
+  #education .schools .card {
+    height: 45vh;
+    width: 90%;
+    left: 20px;
+  }
+}
+
+@media (max-width: 738px) and (max-height: 420px) {
+  #education .schools .card {
+    height: 80vh;
+    width: 80%;
     left: 70px;
   }
 }
@@ -954,6 +1031,24 @@ body .to-top:hover {
   }
 }
 
+@media (max-width: 420px) {
+  #project .project-cards {
+    -ms-grid-columns: 5% 90% 5%;
+        grid-template-columns: 5% 90% 5%;
+    -ms-grid-rows: 50vh 50vh 50vh;
+        grid-template-rows: 50vh 50vh 50vh;
+  }
+}
+
+@media (max-width: 738px) and (max-height: 420px) {
+  #project .project-cards {
+    -ms-grid-columns: 5% 90% 5%;
+        grid-template-columns: 5% 90% 5%;
+    -ms-grid-rows: 100vh 100vh 100vh;
+        grid-template-rows: 100vh 100vh 100vh;
+  }
+}
+
 #project .project-cards .project-card {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.747);
@@ -1008,6 +1103,12 @@ body .to-top:hover {
   }
 }
 
+@media (max-width: 738px) and (max-height: 420px) {
+  #project .project-cards .project-card .project-description {
+    font-size: 1.45rem;
+  }
+}
+
 #project .project-cards .project-card .project-langs {
   border: 1px solid white;
   text-align: left;
@@ -1038,6 +1139,17 @@ body .to-top:hover {
   }
 }
 
+@media (max-width: 738px) and (max-height: 420px) {
+  #project .project-cards #project1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
 #project .project-cards #project2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -1057,6 +1169,16 @@ body .to-top:hover {
   }
 }
 
+@media (max-width: 738px) and (max-height: 420px) {
+  #project .project-cards #project2 {
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
 #project .project-cards #project3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -1066,6 +1188,17 @@ body .to-top:hover {
 }
 
 @media (max-width: 600px) {
+  #project .project-cards #project3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 738px) and (max-height: 420px) {
   #project .project-cards #project3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;

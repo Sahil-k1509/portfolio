@@ -16,6 +16,16 @@ html{
     @include respond(mobile){
         font-size: 48%;
     }
+    @include respond(iphone){
+        font-size: 45%;
+    }
+    @include respond(small-i){
+        font-size: 40%;
+    }
+    
+    @include respond(very-small-i){
+        font-size: 35%;
+    }
     overflow-x: hidden;
     scroll-behavior: smooth;
 }

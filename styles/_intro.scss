@@ -14,6 +14,10 @@
         height: 40%;
         @include centralise;
         top: 30%;
+        @include respond(iphone-land){
+            top: 50%;
+            height: 50%;
+        }
 
         .small-text{
             position: absolute;
@@ -70,6 +74,9 @@
             width: 80%;
             position: absolute;
             @include centralise;
+            @include respond(iphone-land){
+                transform: translate(-50%,-100%);
+            }
             animation: fill_name 1.5s ease forwards 5s;
         }
         #s{   stroke-dasharray: 259.3     ;    stroke-dashoffset: 259.3   ;     animation: appear 1s ease forwards;                 }

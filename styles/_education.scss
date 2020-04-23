@@ -14,6 +14,10 @@
             width: 90%;
             flex-direction: column;
         }
+        @include respond(iphone-land){
+            width: 90%;
+            flex-direction: column;
+        }
 
         .card{
             background: rgba(36, 35, 35, 0.856);
@@ -35,6 +39,17 @@
             @include respond(mobile){
                 height: 40vh;
                 width: 70%;
+                left: 70px;
+            }
+
+            @include respond(iphone){
+                height: 45vh;
+                width: 90%;
+                left: 20px;
+            }
+            @include respond(iphone-land){
+                height: 80vh;
+                width: 80%;
                 left: 70px;
             }
 
