@@ -8,17 +8,35 @@
         padding: 2rem;
         display: flex;
         flex-direction: row;
+        height: 90%;
+
+        @include respond(phone){
+            width: 90%;
+            flex-direction: column;
+        }
 
         .card{
             background: rgba(36, 35, 35, 0.856);
             border: 1px solid white;
             width: 30vw;
-            height: 30vw;
+            height: 96%;
             padding: 1rem;
             margin: 1.3rem;
             text-align: center;
             position: relative;
             border-radius: 5px;
+            animation: wiggle 1s ease infinite;
+            
+            @include respond(phone){
+                height: 35vh;
+                width: 80%;
+                left: 80px;
+            }
+            @include respond(mobile){
+                height: 40vh;
+                width: 70%;
+                left: 70px;
+            }
 
             .card-img{
                 width: 30%;
@@ -34,12 +52,16 @@
             .description{
                 color: rgb(14, 14, 14);
                 text-align: justify;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 padding: 0.3rem;
                 margin: 0.2rem;
                 padding-bottom: 2rem;
                 border: 1px solid white;
                 background-color: rgba(245, 245, 245, 0.301);
+                
+                @include respond(phone){
+                    font-size: 1.5rem;
+                }
             }
             .visit-link{
                 position: absolute;
@@ -65,6 +87,7 @@
         }
         .middle-school:hover{
             filter: brightness(100%) blur(0px);
+            animation: none;
             transform: translate(0,-10px);
         }
         
@@ -74,6 +97,7 @@
         }
         .high-school:hover{
             filter: brightness(100%) blur(0px);
+            animation: none;
             transform: translate(0,-10px);
         }
         .university{
@@ -82,7 +106,20 @@
         }
         .university:hover{
             filter: brightness(100%) blur(0px);
+            animation: none;
             transform: translate(0,-10px);
+        }
+
+        @keyframes wiggle{
+            0%{
+                transform: rotateZ(-2deg);
+            }
+            50%{
+                transform: rotateZ(2deg);
+            }
+            100%{
+                transform: rotateZ(-2deg);
+            }
         }
     }
 }

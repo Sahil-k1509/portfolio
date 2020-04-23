@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mediaquery";
 
 *{
     padding: 0;
@@ -9,6 +10,12 @@
 
 html{
     font-size: 62.5%;
+    @include respond(phone){
+        font-size: 50%;
+    }
+    @include respond(mobile){
+        font-size: 48%;
+    }
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -35,7 +42,6 @@ body{
     }
 }
 
-@import "./mediaquery";
 @import "./navbar";
 @import "./intro";
 @import "./about";
