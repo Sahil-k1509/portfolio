@@ -91,7 +91,7 @@
         @include centralise;
         transform: translate(-50%, -20%);
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 15% 85%;
+        grid-template-rows: 10% 90%;
 
         
         @include respond(phone){
