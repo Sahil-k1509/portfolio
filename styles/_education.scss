@@ -8,7 +8,7 @@
         padding: 2rem;
         display: flex;
         flex-direction: row;
-        height: 90%;
+        height: 97%;
 
         @include respond(phone){
             width: 90%;
@@ -23,7 +23,7 @@
             background: rgba(36, 35, 35, 0.856);
             border: 1px solid white;
             width: 30vw;
-            height: 96%;
+            height: 52vh;
             padding: 1rem;
             margin: 1.3rem;
             text-align: center;
