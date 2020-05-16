@@ -1,32 +1,27 @@
 @import "./variables";
 
 #project{
-    //height: 80vh;
-    @include respond(phone){
-        
-    }
     background:  linear-gradient(rgba(199, 217, 223, 0.719), rgba(0, 75, 50, 0.884));
     .project-cards{
-        height: 80%;
         display: grid;
         padding: 1rem;
         margin-top: 3rem;
         grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 100%;
+        grid-template-rows: 56% 44%;
         grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
 
         @include respond(phone){
-            grid-template-columns: 10% 80% 10%;
-            grid-template-rows: 40vh 40vh 40vh;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
         }
         @include respond(iphone){
             grid-template-columns: 5% 90% 5%;
-            grid-template-rows: 50vh 50vh 50vh;
+            grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
         }
         @include respond(iphone-land){
             grid-template-columns: 5% 90% 5%;
-            grid-template-rows: 100vh 100vh 100vh;
+            grid-template-rows: 100vh 100vh 100vh 100vh 100vh 100vh;
         }
 
         .project-card{
@@ -35,6 +30,7 @@
             color: rgba(255, 255, 255, 0.808);
             position: relative;
             border-radius: 1rem;
+            margin: 1rem;
             border-bottom: 0.3rem solid white;
 
             .shutter{
@@ -121,6 +117,40 @@
                 grid-column: 2/3;
             }
         }
+        #project4{
+            grid-area: 2/1/3/2;
+            @include respond(phone){
+                grid-row: 4/5;
+                grid-column: 2/3;
+            }
+            @include respond(iphone-land){
+                grid-row: 4/5;
+                grid-column: 2/3;
+            }
+        }
+        #project5{
+            grid-area: 2/2/3/3;
+            @include respond(phone){
+                grid-row: 5/6;
+                grid-column: 2/3;
+            }
+            @include respond(iphone-land){
+                grid-row: 5/6;
+                grid-column: 2/3;
+            }
+        }
+        #project6{
+            grid-area: 2/3/3/4;
+            @include respond(phone){
+                grid-row: 6/7;
+                grid-column: 2/3;
+            }
+            @include respond(iphone-land){
+                grid-row: 6/7;
+                grid-column: 2/3;
+            }
+        }
+
         #project1:hover #shutter1{
             height: 0;
         }
@@ -128,6 +158,15 @@
             height: 0;
         }
         #project3:hover #shutter3{
+            height: 0;
+        }
+        #project4:hover #shutter4{
+            height: 0;
+        }
+        #project5:hover #shutter5{
+            height: 0;
+        }
+        #project6:hover #shutter6{
             height: 0;
         }
     }
