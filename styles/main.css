@@ -539,7 +539,7 @@ body .to-top:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 25%;
+  top: 30%;
 }
 
 #about .about-text a {
