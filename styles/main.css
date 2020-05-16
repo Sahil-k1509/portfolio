@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   html {
     font-size: 50%;
   }
@@ -36,7 +36,7 @@ html {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   html {
     font-size: 45%;
   }
@@ -109,9 +109,7 @@ body .to-top:hover {
 
 .navigation .nav-items .nav-item:hover {
   color: white;
-  text-shadow: 0 0 3px green,
- 0 0 10px green, 
- 0 0 20px green;
+  text-shadow: 0 0 3px green, 0 0 10px green,  0 0 20px green;
   -webkit-animation: hovered 1s ease forwards;
           animation: hovered 1s ease forwards;
 }
@@ -175,7 +173,7 @@ body .to-top:hover {
   top: 30%;
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #intro .svg-container {
     top: 50%;
     height: 50%;
@@ -295,7 +293,7 @@ body .to-top:hover {
           animation: fill_name 1.5s ease forwards 5s;
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #intro .svg-container #name {
     -webkit-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
@@ -467,10 +465,10 @@ body .to-top:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.863)), color-stop(rgba(0, 44, 42, 0.836)), to(#000c33));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.863), rgba(0, 44, 42, 0.836), #000c33);
   position: relative;
-  height: 150vh;
+  height: 200vh;
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #about {
     height: 300vh;
   }
@@ -515,6 +513,7 @@ body .to-top:hover {
 
 #about .about-heading {
   position: absolute;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -522,6 +521,12 @@ body .to-top:hover {
   font-size: 5rem;
   letter-spacing: 0.3rem;
   text-shadow: 0 0 5px #00b7ff, 0 0 10px #00b7ff;
+}
+
+@media (max-width: 430px) {
+  #about .about-heading {
+    top: 5%;
+  }
 }
 
 #about .about-text {
@@ -539,7 +544,7 @@ body .to-top:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 30%;
+  top: 25%;
 }
 
 #about .about-text a {
@@ -551,15 +556,16 @@ body .to-top:hover {
   color: #226ccc;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .about-text {
     top: 20%;
     padding: 1.5rem;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   #about .about-text {
+    top: 12%;
     width: 70%;
     padding: 2rem;
   }
@@ -575,27 +581,38 @@ body .to-top:hover {
   -webkit-box-shadow: 1rem 1rem 2.5rem #99b6b9;
           box-shadow: 1rem 1rem 2.5rem #99b6b9;
   width: 80%;
-  height: 40%;
+  height: 45%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
   -ms-grid-rows: 10% 90%;
       grid-template-rows: 10% 90%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills {
-    top: 40%;
-    height: 80vh;
+    top: 45%;
+    height: 120vh;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     -ms-grid-rows: 10% 30% 60%;
         grid-template-rows: 10% 30% 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills {
+    top: 40%;
+    height: 140vh;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 5% 20% 35% 25% 15%;
+        grid-template-rows: 5% 20% 35% 25% 15%;
   }
 }
 
@@ -611,7 +628,7 @@ body .to-top:hover {
   grid-area: 1/1/2/5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills h2 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -619,6 +636,17 @@ body .to-top:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills h2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 
@@ -645,8 +673,20 @@ body .to-top:hover {
   border-right: 1px solid rgba(255, 255, 255, 0.308);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills .languages {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills .languages {
+    width: 60%;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -677,8 +717,20 @@ body .to-top:hover {
   border-right: 1px solid rgba(255, 255, 255, 0.308);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills .additionals {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills .additionals {
+    width: 60%;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -718,7 +770,7 @@ body .to-top:hover {
   border-right: 1px solid rgba(255, 255, 255, 0.308);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills .text-editors {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -726,6 +778,18 @@ body .to-top:hover {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills .text-editors {
+    width: 60%;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 
@@ -749,7 +813,7 @@ body .to-top:hover {
   margin-top: 0.75rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .coding-skills .terminals {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -758,6 +822,18 @@ body .to-top:hover {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     border-right: 1px solid rgba(255, 255, 255, 0.308);
+  }
+}
+
+@media (max-width: 430px) {
+  #about .coding-skills .terminals {
+    width: 60%;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 
@@ -772,7 +848,7 @@ body .to-top:hover {
 
 #about .post-script {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -785,7 +861,7 @@ body .to-top:hover {
   padding: 2rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   #about .post-script {
     width: 90%;
   }
@@ -806,10 +882,10 @@ body .to-top:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90%;
+  height: 97%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #education .schools {
     width: 90%;
     -webkit-box-orient: vertical;
@@ -819,7 +895,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #education .schools {
     width: 90%;
     -webkit-box-orient: vertical;
@@ -833,7 +909,7 @@ body .to-top:hover {
   background: rgba(36, 35, 35, 0.856);
   border: 1px solid white;
   width: 30vw;
-  height: 96%;
+  height: 52vh;
   padding: 1rem;
   margin: 1.3rem;
   text-align: center;
@@ -843,7 +919,7 @@ body .to-top:hover {
           animation: wiggle 1s ease infinite;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #education .schools .card {
     height: 35vh;
     width: 80%;
@@ -859,7 +935,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   #education .schools .card {
     height: 45vh;
     width: 90%;
@@ -867,7 +943,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #education .schools .card {
     height: 80vh;
     width: 80%;
@@ -899,7 +975,7 @@ body .to-top:hover {
   background-color: rgba(245, 245, 245, 0.301);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #education .schools .card .description {
     font-size: 1.5rem;
   }
@@ -1010,43 +1086,42 @@ body .to-top:hover {
 }
 
 #project .project-cards {
-  height: 80%;
   display: -ms-grid;
   display: grid;
   padding: 1rem;
   margin-top: 3rem;
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
+  -ms-grid-rows: 56% 44%;
+      grid-template-rows: 56% 44%;
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #project .project-cards {
-    -ms-grid-columns: 10% 80% 10%;
-        grid-template-columns: 10% 80% 10%;
-    -ms-grid-rows: 40vh 40vh 40vh;
-        grid-template-rows: 40vh 40vh 40vh;
+    -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    -ms-grid-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   #project .project-cards {
     -ms-grid-columns: 5% 90% 5%;
         grid-template-columns: 5% 90% 5%;
-    -ms-grid-rows: 50vh 50vh 50vh;
-        grid-template-rows: 50vh 50vh 50vh;
+    -ms-grid-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #project .project-cards {
     -ms-grid-columns: 5% 90% 5%;
         grid-template-columns: 5% 90% 5%;
-    -ms-grid-rows: 100vh 100vh 100vh;
-        grid-template-rows: 100vh 100vh 100vh;
+    -ms-grid-rows: 100vh 100vh 100vh 100vh 100vh 100vh;
+        grid-template-rows: 100vh 100vh 100vh 100vh 100vh 100vh;
   }
 }
 
@@ -1056,6 +1131,7 @@ body .to-top:hover {
   color: rgba(255, 255, 255, 0.808);
   position: relative;
   border-radius: 1rem;
+  margin: 1rem;
   border-bottom: 0.3rem solid white;
 }
 
@@ -1104,7 +1180,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #project .project-cards .project-card .project-description {
     font-size: 1.45rem;
   }
@@ -1129,7 +1205,7 @@ body .to-top:hover {
   grid-area: 1/1/2/2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #project .project-cards #project1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -1140,7 +1216,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #project .project-cards #project1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -1159,7 +1235,7 @@ body .to-top:hover {
   grid-area: 1/2/2/3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #project .project-cards #project2 {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -1170,7 +1246,7 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #project .project-cards #project2 {
     -ms-grid-row: 2;
     grid-row: 2/2;
@@ -1188,7 +1264,7 @@ body .to-top:hover {
   grid-area: 1/3/2/4;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #project .project-cards #project3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -1199,11 +1275,101 @@ body .to-top:hover {
   }
 }
 
-@media (max-width: 738px) and (max-height: 420px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   #project .project-cards #project3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+#project .project-cards #project4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+}
+
+@media (max-width: 800px) {
+  #project .project-cards #project4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  #project .project-cards #project4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+#project .project-cards #project5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+}
+
+@media (max-width: 800px) {
+  #project .project-cards #project5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  #project .project-cards #project5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+#project .project-cards #project6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2/3/3/4;
+}
+
+@media (max-width: 800px) {
+  #project .project-cards #project6 {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  #project .project-cards #project6 {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -1219,6 +1385,18 @@ body .to-top:hover {
 }
 
 #project .project-cards #project3:hover #shutter3 {
+  height: 0;
+}
+
+#project .project-cards #project4:hover #shutter4 {
+  height: 0;
+}
+
+#project .project-cards #project5:hover #shutter5 {
+  height: 0;
+}
+
+#project .project-cards #project6:hover #shutter6 {
   height: 0;
 }
 
