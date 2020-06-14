@@ -11,16 +11,16 @@
 html{
     font-size: 62.5%;
     @include respond(phone){
-        font-size: 50%;
-    }
-    @include respond(mobile){
-        font-size: 48%;
-    }
-    @include respond(iphone){
         font-size: 45%;
     }
+    @include respond(mobile){
+        font-size: 43%;
+    }
+    @include respond(iphone){
+        font-size: 41%;
+    }
     @include respond(small-i){
-        font-size: 40%;
+        font-size: 39%;
     }
     
     @include respond(very-small-i){

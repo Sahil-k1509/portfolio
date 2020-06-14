@@ -3,11 +3,11 @@
 #about{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.863),rgba(0, 44, 42, 0.836),rgb(0, 12, 51));
     position: relative;
-    height: 213vh;
+    height: 240vh;
     @include respond(iphone-land){
         height: 300vh;
     }
-
+     
     .photo-container-1{
             position: absolute;
             top: 0;
@@ -100,15 +100,15 @@
         
         @include respond(phone){
             top: 45%;
-            height: 120vh;
+            height: 140vh;
             grid-template-columns: 50% 50%;
             grid-template-rows: 10% 30% 60%;
         }
         @include respond(iphone){
-            top: 40%;
-            height: 140vh;
+            top: 41%;
+            height: 72%;
             grid-template-columns: 100%;
-            grid-template-rows: 5% 20% 35% 25% 15%;
+            grid-template-rows: 5% 18% 37% 25% 15%;
         }
         
         h2{
