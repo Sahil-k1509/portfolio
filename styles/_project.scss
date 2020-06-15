@@ -32,7 +32,7 @@
             border-radius: 1rem;
             margin: 1rem;
             border-bottom: 0.3rem solid white;
-
+    
             .shutter{
                 position: absolute;
                 top: 0;
@@ -169,5 +169,43 @@
         #project6:hover #shutter6{
             height: 0;
         }
+
+        .project-card:hover{
+            animation: backchanger 1s infinite;
+        }
+                
+        @keyframes backchanger{
+            0%{
+            box-shadow: 0 0 5px rgb(124, 218, 255), 
+            0 0 15px rgb(124, 218, 255), 
+            0 0 35px rgb(124, 218, 255) ;
+            }
+            20%{
+                box-shadow: 0 0 5px rgb(124, 255, 168), 
+                0 0 15px rgb(124, 255, 168), 
+                0 0 35px rgb(124, 255, 168) ;
+            }
+            40%{
+                box-shadow: 0 0 5px rgb(242, 255, 124), 
+                0 0 15px rgb(242, 255, 124), 
+                0 0 35px rgb(242, 255, 124) ;
+            }
+            60%{
+                box-shadow: 0 0 5px rgb(255, 133, 124), 
+                0 0 15px rgb(255, 133, 124), 
+                0 0 35px rgb(255, 133, 124) ;
+            }
+            80%{
+                box-shadow: 0 0 5px rgb(148, 124, 255), 
+                0 0 15px rgb(148, 124, 255), 
+                0 0 35px rgb(148, 124, 255) ;
+            }
+            100%{
+                box-shadow: 0 0 5px rgb(124, 218, 255), 
+                0 0 15px rgb(124, 218, 255), 
+                0 0 35px rgb(124, 218, 255) ;
+                }
+        }
+
     }
 }

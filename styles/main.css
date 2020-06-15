@@ -1400,6 +1400,65 @@ body .to-top:hover {
   height: 0;
 }
 
+#project .project-cards .project-card:hover {
+  -webkit-animation: backchanger 1s infinite;
+          animation: backchanger 1s infinite;
+}
+
+@-webkit-keyframes backchanger {
+  0% {
+    -webkit-box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+            box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 5px #7cffa8, 0 0 15px #7cffa8, 0 0 35px #7cffa8;
+            box-shadow: 0 0 5px #7cffa8, 0 0 15px #7cffa8, 0 0 35px #7cffa8;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 5px #f2ff7c, 0 0 15px #f2ff7c, 0 0 35px #f2ff7c;
+            box-shadow: 0 0 5px #f2ff7c, 0 0 15px #f2ff7c, 0 0 35px #f2ff7c;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 5px #ff857c, 0 0 15px #ff857c, 0 0 35px #ff857c;
+            box-shadow: 0 0 5px #ff857c, 0 0 15px #ff857c, 0 0 35px #ff857c;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 5px #947cff, 0 0 15px #947cff, 0 0 35px #947cff;
+            box-shadow: 0 0 5px #947cff, 0 0 15px #947cff, 0 0 35px #947cff;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+            box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+  }
+}
+
+@keyframes backchanger {
+  0% {
+    -webkit-box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+            box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 5px #7cffa8, 0 0 15px #7cffa8, 0 0 35px #7cffa8;
+            box-shadow: 0 0 5px #7cffa8, 0 0 15px #7cffa8, 0 0 35px #7cffa8;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 5px #f2ff7c, 0 0 15px #f2ff7c, 0 0 35px #f2ff7c;
+            box-shadow: 0 0 5px #f2ff7c, 0 0 15px #f2ff7c, 0 0 35px #f2ff7c;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 5px #ff857c, 0 0 15px #ff857c, 0 0 35px #ff857c;
+            box-shadow: 0 0 5px #ff857c, 0 0 15px #ff857c, 0 0 35px #ff857c;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 5px #947cff, 0 0 15px #947cff, 0 0 35px #947cff;
+            box-shadow: 0 0 5px #947cff, 0 0 15px #947cff, 0 0 35px #947cff;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+            box-shadow: 0 0 5px #7cdaff, 0 0 15px #7cdaff, 0 0 35px #7cdaff;
+  }
+}
+
 #contact {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.767)), to(rgba(0, 0, 0, 0.322))), -webkit-gradient(linear, left top, left bottom, from(rgba(66, 218, 238, 0.575)), to(rgba(83, 255, 135, 0.699))), url("../images/forest.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.322)), linear-gradient(rgba(66, 218, 238, 0.575), rgba(83, 255, 135, 0.699)), url("../images/forest.jpg");
